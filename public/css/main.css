@@ -1,0 +1,54 @@
+
+body {
+  background-color: #eee;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+#display {
+  color: #696969;
+  text-align: center;
+  font-size: 75px;
+  margin-bottom: 25px;
+}
+#start{
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+#pause{
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+header {
+  background-color: #d43f3a;
+  margin-bottom: 75px;
+}
+h1 {
+  text-align: center;
+  margin: 0;
+}
+img {
+  height: 70px;
+  margin: 15px;
+}
+footer {
+  height: 70px;
+  background-color: #808080;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+ .vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.jumbotron {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}

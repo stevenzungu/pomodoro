@@ -1,28 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Pomodoro Timer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-8 col-xs-offset-2" id='display'>
-          <span id="minutes">25</span>
-          <span>:</span>
-          <span id="seconds">00</span>
-        </div>
-      </div>
-      <div class="row">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Timer</title>
+  <link rel="icon" href="images/tomato_favicon.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+      <h1><img src="images/tomato_icon.png" alt="tomato icon"><h1>
+    </header>
+    <audio id="myAudio">
+      <source src="sound/ship_brass_bell.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="jumbotron verticle-center">
+      <div class="container">
         <div class="row">
-          <div class="col-xs-offset-2">
-            <button id="start" class="btn btn-success btn-block">Start</button>
+          <div class="col-xs-8 col-xs-offset-2" id='display'>
+            <span id="minutes"></span>
+            <span>:</span>
+            <span id="seconds"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2">
+            <button id='start' class="btn btn-success btn-block btn-lg">START</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2">
+            <button id='pause' class="btn btn-primary btn-block btn-lg">PAUSE</button>
+          </div>
         </div>
       </div>
     </div>
+    <footer>
+    </footer>
+
 
   <script src="js/app.js"></script>
-  </body>
+</body>
 </html>
